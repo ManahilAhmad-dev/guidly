@@ -103,4 +103,9 @@
     padding: 10px 15px;
     font-size: 14px;
   }
+
+  .whatsapp-btn img {
+    width: 30px;
+    height: 30px;
+  }
 }
