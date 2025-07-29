@@ -14,7 +14,7 @@ const Contact = () => {
     setResult("Sending...");
 
     const formData = new FormData(event.target);
-    formData.append("access_key", "8827c9e8-78c2-4168-9377-19cc16599264");
+    formData.append("access_key", "bd228381-9d2a-44bc-a4e8-c8f280f8d337");
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
@@ -43,14 +43,12 @@ const Contact = () => {
       <div className="contact-col">
         <h3>Send us a message <img src={msg_icon} alt="message icon" /></h3>
         <p>
-          Feel free to reach out through the contact form or find our contact
-          information below. Your feedback, questions, and suggestions are important to us 
-          as we strive to provide exceptional services.
+         Have questions or need assistance? Reach out to AssignmentMaker through the contact form below or use the contact details provided. We're here to help with any queries, suggestions, or feedback as we aim to deliver top-notch academic support.
         </p>
         <ul>
-          <li><img src={mail_icon} alt="mail" /> Contact@IBvis.com</li>
-          <li><img src={phone_icon} alt="phone" /> 031234567819</li>
-          <li><img src={location_icon} alt="location" /> University of Management and Technology, Lahore</li>
+          <li><img src={mail_icon} alt="mail" />guidly.assignment@gmail.com</li>
+          <li><img src={phone_icon} alt="phone" />+44 7848 812413</li>
+          <li><img src={location_icon} alt="location" />Glasgow, UK</li>
         </ul>
       </div>
 
@@ -81,7 +79,7 @@ const Contact = () => {
         </form>
 
         <a
-          href="https://wa.me/923216993499?text=Hello%20Can%20I%20get%20more%20Information?"
+          href="https://wa.me/+44 7848 812413?text=Hello%20Can%20I%20get%20more%20Information?"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-btn"
