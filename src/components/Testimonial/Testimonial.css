@@ -1,0 +1,150 @@
+.testimonial-container {
+  background-color: #0a0f20;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.testimonial-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: #1a1f30;
+  padding: 30px 25px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.testimonial-card h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.testimonial-card .field {
+  color: #b3b3b3;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .stars {
+  font-size: 18px;
+  color: #FFD700;
+  margin-bottom: 15px;
+}
+
+.testimonial-card .message {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial-card .date {
+  text-align: center;
+  font-size: 13px;
+  color: #a9a9a9;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nav-btn:hover {
+  transform: scale(1.2);
+}
+
+/* ---------------- Responsive Enhancements ---------------- */
+
+@media (max-width: 1024px) {
+  .testimonial-container h2 {
+    font-size: 24px;
+  }
+
+  .testimonial-card {
+    padding: 24px 20px;
+    max-width: 85%;
+  }
+
+  .testimonial-card h3 {
+    font-size: 18px;
+  }
+
+  .testimonial-card .field {
+    font-size: 14px;
+  }
+
+  .testimonial-card .stars {
+    font-size: 16px;
+  }
+
+  .testimonial-card .message {
+    font-size: 15px;
+  }
+
+  .testimonial-card .date {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-controls {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav-btn {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-container {
+    padding: 40px 10px;
+  }
+
+  .testimonial-card {
+    padding: 20px 15px;
+  }
+
+  .testimonial-container h2 {
+    font-size: 20px;
+  }
+
+  .testimonial-card .message {
+    font-size: 14px;
+  }
+
+  .nav-btn {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,160 @@
+nav {
+  width: 100%;
+  color: white;
+  position: fixed;
+  display: flex;
+  align-items: center; /* vertical centering */
+  justify-content: space-between;
+  padding: 4px 40px; /* balance top and bottom padding */
+  padding-bottom: 4px;
+  z-index: 10;
+}
+.nav ul {
+  display: flex;
+  align-items: center; /* vertical */
+  justify-content: center; /* horizontal */
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+  .logo
+  {
+   width: 45px;
+  transform: scale(2); /* Zoom out to make it look larger */
+  transform-origin: center center; /* Keep scaling centered */
+  }
+  nav ul li{
+    display: inline;
+    list-style: none;
+    margin:5px 20px;
+    font-size: 18px;
+    padding-bottom: 5px;
+
+  }
+  .dark-nav{
+    background: rgb(10, 15, 30);
+    transition: 0.5s;
+  }
+  /* media query*/
+  @media(max-width:1000px)
+  {
+    .logo{
+      width: 40px;
+    }
+    nav ul li{
+      margin:10px 15px;
+    }
+
+    nav ul li span {
+      cursor: pointer;
+    }
+  }
+  .menu-icon
+  {
+    display: none;
+  }
+  @media(max-width:840px)
+  {
+    nav{
+      padding: 8px 0;
+    }
+    nav ul{
+      position: fixed;
+      top: 0;
+      right: 0px;
+      bottom: 0;
+      background: rgb(10, 15, 30);
+      z-index: -1;
+      width: 200px;
+      transition: 0.5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 25px 40px;
+    }
+    .menu-icon
+    {
+      display: block;
+      width:30px;
+      cursor: pointer;
+    }
+    .hide-mobile-menu
+    {
+      right: -200px;
+    }
+  
+  }
+  .brochure-btn {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    width: 80%;
+    height: 80%;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    z-index: 1000;
+  }
+  
+  .brochure-btn {
+  background: #f39c12;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-left: 20px;
+  transition: background 0.3s ease;
+}
+
+.brochure-btn:hover {
+  background: #d97706;
+  color: white;
+}
+
+@media(max-width: 840px) {
+
+  .logo{
+    width: 30px;
+  }
+  .brochure-btn {
+    display: block;
+    margin: 20px 40px;
+    width: fit-content;
+  }
+}

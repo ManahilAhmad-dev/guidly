@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+  background-color: #0A0F1E;
+  color: #FFFFFF;
+  font-size: 16px;
+  border-top: 1px solid white;
+  text-align: center;
+}
+
+/* Optional: reset list styling if you plan to keep the <ul> */
+.footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* ---------- Responsive Footer ---------- */
+@media (max-width: 600px) {
+  .footer {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .footer ul li {
+    margin: 8px 5px;
+  }
+}

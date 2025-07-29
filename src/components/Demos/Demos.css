@@ -1,0 +1,127 @@
+.demo{
+    padding: 50px 60px;
+    background-color: #121212;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    position: relative; /* Ensure it's positioned properly */
+    padding-top: 70px;
+
+}
+.demo h1{
+    font-size: 35px;
+    align-items: right;
+
+}
+.demo_block{
+    padding-top: 20px;
+    padding-right: 25px;
+    margin: 100px, auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    top: 90px;
+}
+
+.demo_block h2{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.demo_block p{
+    font-size: 15px;
+}
+
+.about-right{
+    flex-basis: 45%;
+}
+
+.about-left{
+    flex-basis: 50%;
+    position: relative;
+}
+
+.demo_img{
+    width: 100%;
+    border-radius: 20px;
+}
+.play_img{
+    width:60px;
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+
+}
+
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .video-container video {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px 10px;
+  }
+  
+
+  @media (max-width: 950px) {
+    .demo h1 {
+      font-size: 25px;
+    }
+  
+    .demo_block h2 {
+      font-size: 25px;
+    }
+  
+    .demo_block p {
+      font-size: 12px;
+    }
+    .play_img {
+        width: 40px;
+      }
+
+  }
+  
+  @media (max-width: 750px) {
+    .demo_block {
+      flex-direction: column;
+      text-align: center;
+      gap: 5px;
+      margin-bottom: 30px;
+    }
+
+    .demo{
+        padding: 50px 30px;
+    
+    }
+  }
+  
