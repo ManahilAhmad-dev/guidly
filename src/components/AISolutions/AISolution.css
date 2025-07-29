@@ -22,6 +22,16 @@
   padding-bottom: 30px;
 }
 
+/* NEW CONTAINER FOR BLOG CARDS */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* BLOG CARD STYLES (unchanged) */
 .blog {
   display: flex;
   flex-direction: column;
@@ -29,9 +39,6 @@
   background-color: #1e1e1e;
   border-radius: 20px;
   color: #FFFFFF;
-  width: 85%;
-  max-width: 600px;
-  margin: 20px auto;
   padding: 24px;
   border: 1px solid #FFFFFF;
   text-align: center;
@@ -51,7 +58,6 @@
   margin-bottom: 16px;
 }
 
-/* Blog text container */
 .blog div {
   padding: 0 20px;
   max-width: 100%;
@@ -85,8 +91,13 @@
     padding-bottom: 20px;
   }
 
+  .card-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .blog {
-    width: 95%;
+    width: 100%;
     padding: 20px;
   }
 
@@ -116,8 +127,8 @@
     padding: 40px;
   }
 
-  .blog {
-    width: 90%;
+  .card-container {
+    grid-template-columns: 1fr;
   }
 
   .solution h1 {
@@ -137,4 +148,3 @@
     font-size: 17px;
   }
 }
-
