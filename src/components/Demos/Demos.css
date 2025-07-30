@@ -43,18 +43,34 @@
   font-size: 16px;
   color: #ffffff;
 }
-
 /* Responsive */
 @media (max-width: 600px) {
+  .demos {
+    padding: 40px 10px;
+  }
+
   .demos h2 {
-    font-size: 26px;
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .demos-grid {
+    gap: 16px;
+  }
+
+  .demos-card {
+    padding: 16px 12px;
+    border-radius: 12px;
   }
 
   .demos-card h1 {
-    font-size: 32px;
+    font-size: 22px;
+    margin-bottom: 6px;
   }
 
   .demos-card p {
-    font-size: 14px;
+    font-size: 12.5px;
+    line-height: 1.4;
   }
 }
+
