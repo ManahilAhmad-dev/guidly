@@ -36,6 +36,7 @@ const Navbar = () => {
         <img src={logo} alt="Logo" className='logo' />
         <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
           <li><Link onClick={handleHomeClick}>Home</Link></li>
+          <li><Link to='demos' smooth={true} offset={-70} duration={500}>Stats</Link></li>
           <li><Link to='solution' smooth={true} offset={-70} duration={500}>Services</Link></li>
           <li><Link to='testimonial-container' smooth={true} offset={-200} duration={500}>Reviews</Link></li>
           <li><Link to='contact' smooth={true} offset={-80} duration={500} className='bim'>Contact us</Link></li>

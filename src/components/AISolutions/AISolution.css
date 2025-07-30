@@ -1,5 +1,5 @@
 .solution {
-  padding: 50px 100px;
+  padding: 40px 60px;
   background-color: #121212;
   color: #FFFFFF;
   display: flex;
@@ -9,142 +9,143 @@
 }
 
 .solution h1 {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .solution p1 {
   display: block;
-  padding-top: 15px;
-  font-size: 18px;
-  color: #ff416c;
-  line-height: 1.6;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  font-size: 17px;
+  color: #ff6a7f;
+  line-height: 1.5;
+  padding-bottom: 20px;
 }
 
-/* NEW CONTAINER FOR BLOG CARDS */
+/* Blog card grid wrapper */
 .card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 24px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1000px;
+  margin-top: 20px;
 }
 
-/* BLOG CARD STYLES (unchanged) */
+/* Individual blog card */
 .blog {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #1e1e1e;
-  border-radius: 20px;
+  border-radius: 16px;
   color: #FFFFFF;
-  padding: 24px;
-  border: 1px solid #FFFFFF;
+  padding: 18px 16px;
+  border: 1px solid #2c2c2c;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(255, 65, 108, 0.1);
+  box-shadow: 0 6px 16px rgba(255, 65, 108, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .blog:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(255, 65, 108, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(255, 65, 108, 0.15);
 }
 
+/* Blog image icon */
 .img {
-  width: 120px;
-  height: 120px;
+  width: 85px;
+  height: 85px;
   object-fit: contain;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
+/* Text inside blog card */
 .blog div {
-  padding: 0 20px;
+  padding: 0 14px;
   max-width: 100%;
 }
 
 .blog h3 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 8px 0 6px;
 }
 
 .blog p {
-  font-size: 14px;
-  line-height: 1.6;
-  padding-bottom: 20px;
+  font-size: 12.8px;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  margin: 0;
 }
 
-/* ----------- Small Devices (≤ 768px) ----------- */
+/* -------- Small Devices -------- */
 @media (max-width: 768px) {
   .solution {
-    padding: 40px 20px;
+    padding: 30px 16px;
   }
 
   .solution h1 {
-    font-size: 26px;
+    font-size: 24px;
+  }
+
+  .solution p1 {
+    font-size: 15px;
+    line-height: 1.4;
+    padding-bottom: 15px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .blog {
+    padding: 14px 12px;
+    border-radius: 14px;
+  }
+
+  .img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 8px;
+  }
+
+  .blog h3 {
+    font-size: 16px;
+  }
+
+  .blog p {
+    font-size: 12px;
+    padding: 0 8px 8px;
+  }
+}
+
+/* -------- Medium Devices -------- */
+@media (max-width: 1000px) {
+  .solution {
+    padding: 32px 24px;
+  }
+
+  .solution h1 {
+    font-size: 30px;
   }
 
   .solution p1 {
     font-size: 16px;
-    line-height: 1.4;
-    padding-bottom: 20px;
-  }
-
-  .card-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .blog {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .blog h3 {
-    font-size: 20px;
-  }
-
-  .blog p {
-    font-size: 13px;
-    padding: 0 10px 15px;
-  }
-
-  .solution h2 {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-}
-
-/* ----------- Medium Devices (769px – 1000px) ----------- */
-@media (max-width: 1000px) {
-  .solution {
-    padding: 40px;
   }
 
   .card-container {
     grid-template-columns: 1fr;
   }
 
-  .solution h1 {
-    font-size: 32px;
-  }
-
   .blog h3 {
-    font-size: 22px;
-  }
-
-  .blog p {
-    font-size: 13.5px;
-    padding: 0 15px;
-  }
-
-  .solution p1 {
     font-size: 17px;
   }
+
+  .blog p {
+    font-size: 12.5px;
+  }
 }
+

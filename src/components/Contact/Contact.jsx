@@ -14,6 +14,20 @@ const Contact = () => {
     setResult("Sending...");
 
     const formData = new FormData(event.target);
+
+    // Deadline validation: Must be 5+ days from today
+    const deadlineInput = formData.get("deadline");
+    const selectedDate = new Date(deadlineInput);
+    const currentDate = new Date();
+    const minDate = new Date();
+    minDate.setDate(currentDate.getDate() + 5);
+
+    if (selectedDate < minDate) {
+      alert("Please select a deadline at least 5 days from today.");
+      setResult("Deadline too soon. Form not submitted.");
+      return;
+    }
+
     formData.append("access_key", "bd228381-9d2a-44bc-a4e8-c8f280f8d337");
 
     try {
@@ -43,7 +57,7 @@ const Contact = () => {
       <div className="contact-col">
         <h3>Send us a message <img src={msg_icon} alt="message icon" /></h3>
         <p>
-         Have questions or need assistance? Reach out to AssignmentMaker through the contact form below or use the contact details provided. We're here to help with any queries, suggestions, or feedback as we aim to deliver top-notch academic support.
+          Have questions or need assistance? Reach out to AssignmentMaker through the contact form below or use the contact details provided. We're here to help with any queries, suggestions, or feedback as we aim to deliver top-notch academic support.
         </p>
         <ul>
           <li><img src={mail_icon} alt="mail" />guidly.assignment@gmail.com</li>
@@ -70,16 +84,21 @@ const Contact = () => {
           <input type="date" name="deadline" required />
 
           <label>Assignment Details *</label>
-          <textarea name="details" rows="6" placeholder="Please provide detailed information about your assignment including requirements, word count, format, specific instructions, and any additional resources or materials needed..." required></textarea>
+          <textarea
+            name="details"
+            rows="6"
+            placeholder="Please provide detailed information about your assignment including requirements, word count, format, specific instructions, and any additional resources or materials needed..."
+            required
+          ></textarea>
 
-          <label>Upload Assignment Files</label>
-          <input type="file" name="files" multiple />
+          <label>Assignment File Link</label>
+          <input type="text" name="file_link" placeholder="Paste Google Drive / Dropbox file link" />
 
           <button type="submit" className="bim dark-btn">Submit Assignment Request</button>
         </form>
 
         <a
-          href="https://wa.me/+44 7848 812413?text=Hello%20Can%20I%20get%20more%20Information?"
+          href="https://wa.me/+447848812413?text=Hello%20Can%20I%20get%20more%20Information?"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-btn"

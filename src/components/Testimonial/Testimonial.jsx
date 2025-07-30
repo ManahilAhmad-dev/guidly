@@ -2,47 +2,47 @@ import React, { useState } from 'react';
 import './Testimonial.css';
 
 const testimonials = [
-  {
-    name: 'Sarah M.',
-    field: 'Business Administration, NYU',
+    {
+    name: 'Aisha H.',
+    field: 'Nursing, University of the West of Scotland',
     stars: 5,
-    message: `Guidly saved my semester! I was struggling with my marketing research paper and they delivered an exceptional assignment that exceeded all my expectations.`,
+    message: `They handled my reflective journal perfectly and used current healthcare references. Highly recommend for nursing students!`,
+    date: '4 days ago',
+  },
+  {
+    name: 'Liam B.',
+    field: 'Mechanical Engineering, University of Glasgow',
+    stars: 5,
+    message: `The support with my CAD and simulation report was top-notch. Everything was accurate and well-formatted.`,
     date: '2 weeks ago',
   },
   {
     name: 'Marcus J.',
     field: 'Computer Science, MIT',
-    stars: 5,
+    stars: 4,
     message: `Amazing experience! The team understood my complex algorithm assignment perfectly and delivered it 2 days before the deadline.`,
     date: '1 month ago',
   },
   {
     name: 'Emma L.',
-    field: 'Psychology, Stanford',
-    stars: 5,
+    field: 'Psychology, UWS',
+    stars: 4,
     message: `My thesis proposal was crafted with incredible attention to detail and followed all academic guidelines perfectly.`,
     date: '3 weeks ago',
   },
   {
-    name: 'David R.',
-    field: 'Engineering, CalTech',
+    name: 'Chloe R.',
+    field: 'Education Studies, University of the West of Scotland',
     stars: 5,
-    message: `Exceptional service! The analysis was thorough, and the presentation was professional.`,
-    date: '5 days ago',
+    message: `They understood academic referencing very well. My literature review got great feedback from my tutor.`,
+    date: '6 days ago',
   },
   {
-    name: 'Jessica K.',
-    field: 'Literature, Harvard',
+    name: 'James W.',
+    field: 'Law, University of Glasgow',
     stars: 5,
-    message: `The literary analysis they provided was brilliant! They captured nuances I hadn't even considered.`,
+    message: `Very reliable and legally accurate! My case study on tort law was well-researched and professionally written.`,
     date: '1 week ago',
-  },
-  {
-    name: 'Alex T.',
-    field: 'Economics, Oxford',
-    stars: 5,
-    message: `Outstanding work on my econometrics project! The statistical analysis was spot-on.`,
-    date: '2 months ago',
   }
 ];
 
